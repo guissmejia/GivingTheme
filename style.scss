@@ -1,5 +1,18 @@
-$title-color :#423d3d;
+$title-color: #423d3d;
 $paragraph-color: #867b7b;
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
 
 body {
   margin: 0;
@@ -10,11 +23,15 @@ body {
   h1,
   h2,
   h3,
-  h4,
-  a {
+  h4 {
     font-family: "Open Sans Condensed", sans-serif;
     color: $title-color;
   }
+}
+
+.Main__container {
+  max-width: 85%;
+  margin: auto;
 }
 
 .Header {
@@ -31,19 +48,97 @@ body {
     color: #676161;
     font-size: 30px;
   }
+  &__main--image {
+    width: 100%;
+    margin: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
-.Home__main--image {
-  width: 100%;
-  margin: 0;
-  img {
-    width: 100%;
-    height: auto;
+.Home__latest__publications {
+  background: #f7f7f7;
+  padding: 4em 0;
+  .Latests__publications--title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    h2 {
+      width: 25%;
+      margin: auto;
+      padding-bottom: .5em;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: 600;
+      border-bottom: 1px solid gray;
+    }
+    p{
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+  }
+  ul {
+    padding: 2em 10% 0;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 0 5%;
+    li {
+      width: 100%;
+      border: 1px solid #dedddd;
+      background: #fff;
+      transition: all .3s;
+      &:hover {
+        box-shadow: 0 3px 6px -4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      }
+      a {
+        img {
+          width: 100%;
+        }
+        .Article__description {
+          padding: 1em 1em 0;
+          h3 {
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 25px;
+          }
+          p,
+          span {
+            color: $paragraph-color;
+            line-height: 25px;
+          }
+        }
+        .Article--actions {
+          padding: 0 1em 1em;
+          display: flex;
+          color: $paragraph-color;
+          justify-content: space-between;
+          align-items: center;
+          div {
+            border-top: 1px solid #a29e9e;
+            padding-top: 0.5em;
+          }
+          span {
+            margin: 0 0.2em;
+            font-size: 20px;
+          }
+          p {
+            color: #bbb8b8;
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
   }
 }
 
 .Footer {
+  padding: 1.5em 0;
   text-align: center;
+  border-top: 1px solid #dedddd;
   &__title h1 {
     width: 6%;
     margin: auto;
@@ -56,12 +151,10 @@ body {
     width: 100%;
     &--icons {
       margin: 2em 0;
-      padding: 0;
       display: flex;
       justify-content: center;
       li {
-        list-style: none;
-        transition: all .3s;
+        transition: all 0.3s;
         &:hover {
           transform: scale(0.9);
         }
