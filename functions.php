@@ -24,7 +24,7 @@ function assets(){
 
   wp_enqueue_style('googleFonts', get_stylesheet_uri(), array('fonts'), '1.0', 'all');
 
-  wp_enqueue_script('script', get_template_directory_uri().'/js/GiveTheme.js', '', '1.0', true);
+  wp_enqueue_script('script', get_template_directory_uri().'/js/GivingTheme.js', '', '1.0', true);
 
 }
 

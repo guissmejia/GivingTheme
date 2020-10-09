@@ -10,6 +10,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <header>
-    
+  <header class="Header">
+    <div class="Header__title">
+      <h1>Adam</h1>
+    </div>
+    <div class="Header__icon--menu">
+      <i class="fas fa-bars"></i>
+    </div>
  </header>

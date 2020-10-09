@@ -1,12 +1,1 @@
-/*
-Theme name: Giving Theme
-Version: 1.0
-Description: Minimal Portfolio
-Author: Guiselle Mejia
-Author URI: https://github.com/guissmejia/GivingTheme.git
-License: GNU General Public Licence v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-*/
-
-body{background:#000}
+body{margin:0;padding:0;color:#867b7b;box-sizing:border-box!important;font-family:"Lato",sans-serif}body a,body h1,body h2,body h3,body h4{font-family:"Open Sans Condensed",sans-serif;color:#423d3d}.Header{padding:0 5%;display:flex;justify-content:space-between;align-items:center}.Header__title h1{text-transform:uppercase;font-weight:500;font-size:30px}.Header__icon--menu i{color:#676161;font-size:30px}.Home__main--image{width:100%;margin:0}.Home__main--image img{width:100%;height:auto}.Footer{text-align:center}.Footer__title h1{width:6%;margin:auto;text-transform:uppercase;padding-bottom:0.3em;border-bottom:1px solid #423d3d;font-weight:500}.Footer__social{width:100%}.Footer__social--icons{margin:2em 0;padding:0;display:flex;justify-content:center}.Footer__social--icons li{list-style:none;transition:all 0.3s}.Footer__social--icons li:hover{transform:scale(0.9)}.Footer__social--icons li a{border:1px solid #867b7b;border-radius:50%;padding:0.4em 0.8em;margin:0 0.5em;color:#867b7b}.Footer p{text-transform:uppercase}.Footer p span{color:#20d8e2}
