@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Page
+*/
+?>
+
 <?php get_header(); ?>
 
 <section class="Article__page">

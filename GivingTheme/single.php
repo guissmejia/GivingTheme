@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Single Post
+*/
+?>
+
 <?php get_header(); ?>
 
 <section class="Single__post">
@@ -8,7 +14,31 @@
       <div class="Single__recent__posts">
         <h3>Recent Posts</h3>
         <ul>
-
+          <?php
+						$args = array(
+							'category_name' => 'latests-posts',
+							'order' => 'DESC',
+							'orderby' => 'date',
+							'posts_per_page' => 3
+						);
+						$latests_posts = get_posts( $args );
+            ?>
+          <?php
+            foreach($latests_posts as $post ) :
+              setup_postdata( $post ); 
+          ?>
+          <li>
+            <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail('medium'); ?>
+              <div class="Article__description">
+                <h4><?php the_title(); ?></h4>
+              </div>
+            </a>
+          </li>
+          <?php
+            endforeach;
+            wp_reset_postdata();
+          ?>
         </ul>
       </div>
     </div>

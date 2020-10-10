@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Page Not Found
+*/
+?>
+
 <?php get_header() ?>
 
 <main class="Main__container">

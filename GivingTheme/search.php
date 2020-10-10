@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Search
+*/
+?>
+
 <?php get_header(); ?>
 
 <section class="Main__container">

@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Search Form
+*/
+?>
+
 <div class="Search">
   <h3>Search</h3>
   <form id="searchform" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
