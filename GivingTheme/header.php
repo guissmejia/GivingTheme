@@ -13,7 +13,7 @@
   <header>
     <section class="Header">
       <div class="Header__title">
-        <a href="<?php echo home_url(); ?>"><h1>Adam</h1></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><h1>Adam</h1></a>
       </div>
       <div class="Header__menu">
         <span class="Header__icon--menu" id="menuMobile"><i class="fas fa-bars"></i></span>

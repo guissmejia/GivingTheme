@@ -9,7 +9,7 @@ Template Name: Giving Home
 <section class="Home">
   <div>
     <figure class="Header__main--image">
-      <img src="<?php echo get_template_directory_uri()?>/assets/main-image.jpg" alt="Main image Home" />
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/main-image.jpg" alt="Main image Home" />
     </figure>
   </div>
   <section class="Home__custom__posts">

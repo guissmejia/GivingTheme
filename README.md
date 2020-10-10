@@ -15,6 +15,14 @@ Next, you will find the steps to install the Giving Theme in WordPress:
 
 4. With the Portfolio plugin, you can create custom posts to manage your content in a better way, enjoy it!
 
+5. Download the .xml file to import the content using the Tools> Import option, run the Wordpress Importer, load the .xml file you downloaded and you will be able to view the content.
+
+Note: If you have problems importing the media, you can download the .xml file corresponding to the assets and import it again.
+
+6. Using the option Settings> Reading, set the page "Adam" as the home page.
+
+Ready!
+
 
 ### Stack
 

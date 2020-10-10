@@ -30,7 +30,7 @@ function assets(){
 
 add_action('wp_enqueue_scripts','assets');
 
-/* Permite responder los comentarios de otro usuario en los post */
+
 function enable_threaded_comments() {
 
 	if ( is_singular() AND comments_open() AND ( get_option( 'thread_comments' ) == 1 ) ) {
