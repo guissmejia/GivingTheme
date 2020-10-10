@@ -39,6 +39,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #dedddd;
   &__title h1 {
     text-transform: uppercase;
     font-weight: 500;
@@ -47,6 +48,38 @@ body {
   &__icon--menu i {
     color: #676161;
     font-size: 30px;
+    display: none;
+  }
+  &__menu {
+    nav > ul {
+      display: flex;
+      align-items: center;
+      li {
+        margin: 0 1em;
+        a {
+          color: $title-color;
+          text-transform: uppercase;
+          font-size: 15px;
+          padding-right: 25px;
+          position: relative;
+          transition: all .3s;
+          &:after {
+            content: '';
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 5px solid;
+            position: absolute;
+            margin-left: 10px;
+            top: 5px;
+            vertical-align: middle;
+            vertical-align: calc(-50% - 4px );
+          }
+          &:hover {
+            color: #20d8e2;
+          }
+        }
+      }
+    }
   }
   &__main--image {
     width: 100%;
@@ -57,6 +90,62 @@ body {
     }
   }
 }
+
+.Home__custom__posts {
+  padding: 3em 0;
+  &--items {
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+    grid-template-rows: repeat(2,18em);
+    grid-gap: 3em;
+    justify-content: center;
+    align-items: center;
+    li {
+      width: 100%;
+      border: 1px solid #dedddd;
+      transition: all .3s;
+      figure {
+        margin: 0;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .Custom__post--title {
+        padding: 1em;
+        h2 {
+          margin: 0;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+      }
+      &:hover {
+        box-shadow: 0 3px 6px -4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      }
+    }
+  }
+  &--nav {
+    margin: 0 0 3em 0;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin: 0 1.5em;
+        a {
+          color: $title-color;
+          text-transform: uppercase;
+          font-size: 16px;
+          transition: all .3s;
+          &:hover {
+            color: #20d8e2;
+          }
+        }
+      }
+    } 
+  }
+}
+
 
 .Home__latest__publications {
   background: #f7f7f7;
@@ -161,7 +250,7 @@ body {
         a {
           border: 1px solid #867b7b;
           border-radius: 50%;
-          padding: 0.4em 0.8em;
+          padding: 0.6em 0.8em;
           margin: 0 0.5em;
           color: #867b7b;
         }
