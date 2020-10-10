@@ -32,12 +32,12 @@ Template Name: Giving Home
         $portfolios = new WP_Query($args);
 
         if($portfolios->have_posts()){
-            while($portfolios->have_posts()){
-                $portfolios->the_post();
-                ?>
+          while($portfolios->have_posts()){
+            $portfolios->the_post();
+        ?>
 
       <li>
-        <a href="<?php the_permalink(); ?>">
+        <a href="<?= get_permalink(); ?>" title="<?php the_title(); ?>">
           <figure>
             <?php the_post_thumbnail('large'); ?>
           </figure>
@@ -61,7 +61,7 @@ Template Name: Giving Home
     </article>
     <ul>
       <?php
-					query_posts('category_name=latests-posts&posts_per_page=3');
+					query_posts('category_name=latests-posts&posts_per_page=3&order=asc');
 					if (have_posts()) : while (have_posts()) : the_post();
 					?>
       <li>
